@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <style>
+    /* Basic styling for the model menu */
+    #model-menu {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+    }
+    .model-button {
+      display: block;
+      margin: 5px 0;
+      padding: 8px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    .model-button:hover {
+      background-color: #45a049;
+    }
+
+    /* Styling for the image tracking change menu */
+    #image-menu {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+    }
+    .image-button {
+      display: block;
+      margin: 5px 0;
+      padding: 8px;
+      background-color: #2196F3;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    .image-button:hover {
+      background-color: #1976D2;
+    }
+  </style>
+</head>
+<body>
+  <!-- Model selection menu -->
+  <div id="model-menu">
+    <h3>Select Model</h3>
+    <button class="model-button" onclick="loadModel('model1')">Model 1</button>
+    <button class="model-button" onclick="loadModel('model2')">Model 2</button>
+    <button class="model-button" onclick="loadModel('model3')">Model 3</button>
+  </div>
+
+  
+  <!-- Container for the Three.js scene -->
+  <div id="scene-container"></div>
+
+  <!-- Main JavaScript module -->
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
