@@ -6,13 +6,18 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 let camera, scene, renderer;
 let hiroMarkerMesh, earthNFTMesh;
 const loader = new GLTFLoader();
+
+// UNcomment these pictures so that u can detect them in the AR (ankit)
 const imageUrls = {
   hiro: [
-    'https://cdn.glitch.global/65ebd92e-0f4c-42b3-a401-58e7acf16854/conv1-bg.jpg?v=1731596970568',
-    'https://cdn.glitch.global/65ebd92e-0f4c-42b3-a401-58e7acf16854/conv2-bg.jpg?v=1731596980526',
-    'https://cdn.glitch.global/65ebd92e-0f4c-42b3-a401-58e7acf16854/conv3-bg.jpg?v=1731596977081',
-    'https://cdn.glitch.global/65ebd92e-0f4c-42b3-a401-58e7acf16854/img4.jpg?v=1731596974043',
-    'https://cdn.glitch.global/65ebd92e-0f4c-42b3-a401-58e7acf16854/conv2.jpg?v=1731597160532'
+    // 'https://cdn.glitch.global/65ebd92e-0f4c-42b3-a401-58e7acf16854/conv1-bg.jpg?v=1731596970568',
+    // 'https://cdn.glitch.global/65ebd92e-0f4c-42b3-a401-58e7acf16854/conv2-bg.jpg?v=1731596980526',
+    // 'https://cdn.glitch.global/65ebd92e-0f4c-42b3-a401-58e7acf16854/conv3-bg.jpg?v=1731596977081',
+    // 'https://cdn.glitch.global/65ebd92e-0f4c-42b3-a401-58e7acf16854/img4.jpg?v=1731596974043',
+    // 'https://cdn.glitch.global/65ebd92e-0f4c-42b3-a401-58e7acf16854/conv2.jpg?v=1731597160532',
+    // 'https://cdn.glitch.global/65ebd92e-0f4c-42b3-a401-58e7acf16854/test_img1.jpg?v=1731598220945',
+    // 'https://cdn.glitch.global/65ebd92e-0f4c-42b3-a401-58e7acf16854/testimg1.jpg?v=1731598475983',
+    'https://cdn.glitch.global/65ebd92e-0f4c-42b3-a401-58e7acf16854/WhatsApp%20Image%202024-11-14%20at%2021.08.30_f95562cc.jpg?v=1731598775823'
   ],
   earth: ['https://th.bing.com/th/id/OIP.gmQ9F9uQzQrQbQBstNQHDAHaFj?w=800&h=600&rs=1&pid=ImgDetMain']
 };
